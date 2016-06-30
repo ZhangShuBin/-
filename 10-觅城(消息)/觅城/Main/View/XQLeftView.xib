@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cpW-r4-eFL" customClass="XQLeftView">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgImage" translatesAutoresizingMaskIntoConstraints="NO" id="2bi-wo-ncX">
+                    <rect key="frame" x="0.0" y="0.0" width="370" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackLine" translatesAutoresizingMaskIntoConstraints="NO" id="xBp-Ml-0PW">
+                    <rect key="frame" x="-6" y="265" width="356" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="8yv-qc-WeC"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bho-jT-pGV" customClass="XQCityBtn">
+                    <rect key="frame" x="30" y="50" width="230" height="55"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="230" id="jFb-0V-fNA"/>
+                        <constraint firstAttribute="height" constant="55" id="ymB-pZ-TX4"/>
+                    </constraints>
+                    <state key="normal" title="北京">
+                        <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpP-H4-ZZl" customClass="XQMenuBtn">
+                    <rect key="frame" x="30" y="125" width="230" height="55"/>
+                    <state key="normal" backgroundImage="home"/>
+                    <state key="selected" backgroundImage="homeSeletced"/>
+                    <connections>
+                        <action selector="btnClick:" destination="cpW-r4-eFL" eventType="touchUpInside" id="bIv-yp-vgH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iK-Eo-whn" customClass="XQMenuBtn">
+                    <rect key="frame" x="30" y="200" width="230" height="55"/>
+                    <state key="normal" backgroundImage="found"/>
+                    <state key="selected" backgroundImage="foundSelected"/>
+                    <connections>
+                        <action selector="btnClick:" destination="cpW-r4-eFL" eventType="touchUpInside" id="dHX-BD-lfp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmo-tu-H72" customClass="XQMenuBtn">
+                    <rect key="frame" x="30" y="382" width="230" height="55"/>
+                    <state key="normal" backgroundImage="sina"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ab3-sH-2yt" customClass="XQMenuBtn">
+                    <rect key="frame" x="30" y="457" width="230" height="55"/>
+                    <state key="normal" backgroundImage="weixin"/>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Coe-EE-hZg" customClass="XQMenuBtn">
+                    <rect key="frame" x="30" y="532" width="230" height="55"/>
+                    <state key="normal" backgroundImage="message"/>
+                    <state key="selected" backgroundImage="messageSelected"/>
+                    <connections>
+                        <action selector="btnClick:" destination="cpW-r4-eFL" eventType="touchUpInside" id="7Bh-TZ-gUv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayl-5G-s7J" customClass="XQMenuBtn">
+                    <rect key="frame" x="30" y="597" width="230" height="55"/>
+                    <state key="normal" backgroundImage="seting"/>
+                    <state key="selected" backgroundImage="setingSelected"/>
+                    <connections>
+                        <action selector="btnClick:" destination="cpW-r4-eFL" eventType="touchUpInside" id="pMf-qP-Cz0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkW-aX-Mgc" customClass="XQMenuBtn">
+                    <rect key="frame" x="30" y="299" width="230" height="55"/>
+                    <state key="normal" backgroundImage="unLogin"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Gmo-tu-H72" firstAttribute="trailing" secondItem="XkW-aX-Mgc" secondAttribute="trailing" id="056-Vj-mrS"/>
+                <constraint firstAttribute="bottom" secondItem="2bi-wo-ncX" secondAttribute="bottom" id="2em-KA-pRk"/>
+                <constraint firstItem="XkW-aX-Mgc" firstAttribute="width" secondItem="5iK-Eo-whn" secondAttribute="width" id="8It-cn-Zol"/>
+                <constraint firstItem="5iK-Eo-whn" firstAttribute="leading" secondItem="GpP-H4-ZZl" secondAttribute="leading" id="90c-r0-WLn"/>
+                <constraint firstItem="Ayl-5G-s7J" firstAttribute="width" secondItem="Coe-EE-hZg" secondAttribute="width" id="9ba-ao-hCJ"/>
+                <constraint firstItem="Gmo-tu-H72" firstAttribute="height" secondItem="XkW-aX-Mgc" secondAttribute="height" id="BA1-6Y-joj"/>
+                <constraint firstItem="Gmo-tu-H72" firstAttribute="top" secondItem="XkW-aX-Mgc" secondAttribute="bottom" constant="28" id="DLE-VO-nb4"/>
+                <constraint firstItem="GpP-H4-ZZl" firstAttribute="top" secondItem="Bho-jT-pGV" secondAttribute="bottom" constant="20" id="EHy-kl-JqN"/>
+                <constraint firstItem="Gmo-tu-H72" firstAttribute="leading" secondItem="XkW-aX-Mgc" secondAttribute="leading" id="EMj-ZH-HIF"/>
+                <constraint firstItem="Coe-EE-hZg" firstAttribute="trailing" secondItem="ab3-sH-2yt" secondAttribute="trailing" id="EWT-6V-Kaf"/>
+                <constraint firstItem="5iK-Eo-whn" firstAttribute="top" secondItem="GpP-H4-ZZl" secondAttribute="bottom" constant="20" id="Fb6-TZ-VpT"/>
+                <constraint firstItem="2bi-wo-ncX" firstAttribute="top" secondItem="cpW-r4-eFL" secondAttribute="top" id="Fze-M5-oDd"/>
+                <constraint firstItem="ab3-sH-2yt" firstAttribute="leading" secondItem="Gmo-tu-H72" secondAttribute="leading" id="GQT-VM-rP2"/>
+                <constraint firstItem="Coe-EE-hZg" firstAttribute="top" secondItem="ab3-sH-2yt" secondAttribute="bottom" constant="20" id="GY5-Ys-f0D"/>
+                <constraint firstAttribute="trailing" secondItem="xBp-Ml-0PW" secondAttribute="trailing" constant="20" id="Gn5-ks-zQk"/>
+                <constraint firstItem="Bho-jT-pGV" firstAttribute="leading" secondItem="cpW-r4-eFL" secondAttribute="leading" constant="30" id="I8m-e9-ys3"/>
+                <constraint firstItem="Coe-EE-hZg" firstAttribute="leading" secondItem="ab3-sH-2yt" secondAttribute="leading" id="ImZ-2N-gBR"/>
+                <constraint firstItem="XkW-aX-Mgc" firstAttribute="trailing" secondItem="GpP-H4-ZZl" secondAttribute="trailing" id="Iq9-d7-oXP"/>
+                <constraint firstItem="Ayl-5G-s7J" firstAttribute="leading" secondItem="Coe-EE-hZg" secondAttribute="leading" id="MLZ-KZ-A2r"/>
+                <constraint firstItem="Ayl-5G-s7J" firstAttribute="height" secondItem="Coe-EE-hZg" secondAttribute="height" id="Nba-Px-fAQ"/>
+                <constraint firstItem="5iK-Eo-whn" firstAttribute="height" secondItem="GpP-H4-ZZl" secondAttribute="height" id="PUt-Oh-dWp"/>
+                <constraint firstItem="Gmo-tu-H72" firstAttribute="width" secondItem="XkW-aX-Mgc" secondAttribute="width" id="QhQ-0k-x40"/>
+                <constraint firstItem="Ayl-5G-s7J" firstAttribute="top" secondItem="Coe-EE-hZg" secondAttribute="bottom" constant="10" id="RCg-gj-ZcZ"/>
+                <constraint firstItem="5iK-Eo-whn" firstAttribute="width" secondItem="GpP-H4-ZZl" secondAttribute="width" id="RrU-xJ-nl5"/>
+                <constraint firstItem="ab3-sH-2yt" firstAttribute="top" secondItem="Gmo-tu-H72" secondAttribute="bottom" constant="20" id="TUP-23-o43"/>
+                <constraint firstItem="ab3-sH-2yt" firstAttribute="trailing" secondItem="Gmo-tu-H72" secondAttribute="trailing" id="Tuc-dq-Id2"/>
+                <constraint firstItem="XkW-aX-Mgc" firstAttribute="top" secondItem="xBp-Ml-0PW" secondAttribute="bottom" constant="14" id="VAt-Uc-ISO"/>
+                <constraint firstItem="xBp-Ml-0PW" firstAttribute="leading" secondItem="cpW-r4-eFL" secondAttribute="leading" constant="-6" id="XTc-V8-uYg"/>
+                <constraint firstItem="xBp-Ml-0PW" firstAttribute="top" secondItem="5iK-Eo-whn" secondAttribute="bottom" constant="10" id="YGj-EI-jJO"/>
+                <constraint firstItem="ab3-sH-2yt" firstAttribute="height" secondItem="Gmo-tu-H72" secondAttribute="height" id="Zls-81-W1n"/>
+                <constraint firstItem="XkW-aX-Mgc" firstAttribute="height" secondItem="5iK-Eo-whn" secondAttribute="height" id="aoW-1E-cAL"/>
+                <constraint firstAttribute="trailing" secondItem="2bi-wo-ncX" secondAttribute="trailing" id="b6m-ag-s1w"/>
+                <constraint firstItem="XkW-aX-Mgc" firstAttribute="leading" secondItem="GpP-H4-ZZl" secondAttribute="leading" id="daG-zW-sqx"/>
+                <constraint firstItem="Ayl-5G-s7J" firstAttribute="trailing" secondItem="Coe-EE-hZg" secondAttribute="trailing" id="eAv-mK-85i"/>
+                <constraint firstItem="ab3-sH-2yt" firstAttribute="width" secondItem="Gmo-tu-H72" secondAttribute="width" id="eF6-7h-pc7"/>
+                <constraint firstItem="2bi-wo-ncX" firstAttribute="leading" secondItem="cpW-r4-eFL" secondAttribute="leading" id="hL2-Wq-Qzw"/>
+                <constraint firstItem="5iK-Eo-whn" firstAttribute="trailing" secondItem="GpP-H4-ZZl" secondAttribute="trailing" id="inw-Lk-MCh"/>
+                <constraint firstItem="GpP-H4-ZZl" firstAttribute="height" secondItem="Bho-jT-pGV" secondAttribute="height" id="qKW-3U-oFB"/>
+                <constraint firstItem="Bho-jT-pGV" firstAttribute="top" secondItem="cpW-r4-eFL" secondAttribute="top" constant="50" id="rIW-Ez-ZoP"/>
+                <constraint firstItem="GpP-H4-ZZl" firstAttribute="leading" secondItem="Bho-jT-pGV" secondAttribute="leading" id="tbs-C7-6vg"/>
+                <constraint firstItem="Coe-EE-hZg" firstAttribute="height" secondItem="ab3-sH-2yt" secondAttribute="height" id="tfC-xS-7UQ"/>
+                <constraint firstItem="Coe-EE-hZg" firstAttribute="width" secondItem="ab3-sH-2yt" secondAttribute="width" id="ti2-ur-Ona"/>
+                <constraint firstItem="GpP-H4-ZZl" firstAttribute="trailing" secondItem="Bho-jT-pGV" secondAttribute="trailing" id="vPm-3J-v2V"/>
+                <constraint firstItem="GpP-H4-ZZl" firstAttribute="width" secondItem="Bho-jT-pGV" secondAttribute="width" id="voz-20-PZR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="preSelectBtn" destination="GpP-H4-ZZl" id="Iju-lU-biD"/>
+            </connections>
+            <point key="canvasLocation" x="286" y="240.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bgImage" width="194" height="186"/>
+        <image name="blackLine" width="258" height="24"/>
+        <image name="found" width="185" height="54"/>
+        <image name="foundSelected" width="185" height="54"/>
+        <image name="home" width="185" height="54"/>
+        <image name="homeSeletced" width="185" height="54"/>
+        <image name="message" width="185" height="54"/>
+        <image name="messageSelected" width="185" height="54"/>
+        <image name="seting" width="185" height="54"/>
+        <image name="setingSelected" width="185" height="54"/>
+        <image name="sina" width="194" height="51"/>
+        <image name="unLogin" width="202" height="50"/>
+        <image name="weixin" width="194" height="51"/>
+    </resources>
+</document>
